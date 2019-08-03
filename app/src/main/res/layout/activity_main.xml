@@ -11,14 +11,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="@dimen/tv_header_margin_top"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/vehicle_details"
         android:textAlignment="center"
-        android:textSize="35sp"
+        android:textSize="@dimen/tv_header_txt_size"
         android:textStyle="bold"
-        android:textColor="@color/Tx_colour_header"
+        android:textColor="@color/tv_header_colour"
         android:background="@color/bg_colour_header"
         app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,9 @@
         android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="@dimen/rl_height"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="@dimen/rl_margin_top"
+        android:layout_marginRight="@dimen/rl_left_right_margin"
+        android:layout_marginLeft="@dimen/rl_left_right_margin"
         android:background="@color/rl_bg_colour"
         app:layout_constraintTop_toBottomOf="@+id/tv_heading"
         tools:layout_editor_absoluteX="3dp">
@@ -43,7 +45,7 @@
             android:layout_marginTop="@dimen/tv_first_label_top_margin"
             android:text="@string/vehicle_make"
             android:textColor="@color/tv_label_txt_colour"
-            android:textSize="25sp"
+            android:textSize="@dimen/tv_label_txt_size"
             android:textStyle="bold" />
 
         <TextView
@@ -55,7 +57,7 @@
             android:layout_marginTop="@dimen/tv_label_margin_top"
             android:text="@string/vehicle_colour"
             android:textColor="@color/tv_label_txt_colour"
-            android:textSize="25sp"
+            android:textSize="@dimen/tv_label_txt_size"
             android:textStyle="bold" />
 
         <TextView
@@ -65,10 +67,10 @@
             android:layout_below="@id/tv_colour"
             android:layout_marginLeft="@dimen/tv_label_margin_left"
             android:layout_marginTop="@dimen/tv_label_margin_top"
-            android:layout_marginBottom="50dp"
-            android:text="Number Of Doors:"
+            android:layout_marginBottom="@dimen/tv_label_margin_bottom"
+            android:text="@string/number_of_doors"
             android:textColor="@color/tv_label_txt_colour"
-            android:textSize="25sp"
+            android:textSize="@dimen/tv_label_txt_size"
             android:textStyle="bold" />
 
         <TextView
@@ -76,10 +78,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/tv_make"
-            android:layout_marginLeft="81dp"
+            android:layout_marginLeft="@dimen/tv_mk_margin_left"
             android:layout_toRightOf="@id/tv_make"
             android:textColor="@color/tv_values_colour"
-            android:textSize="25sp"
+            android:textSize="@dimen/tv_label_txt_size"
             android:textStyle="bold"
             tools:text="Nissan" />
 
@@ -89,10 +91,10 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/tv_colour"
             android:layout_alignLeft="@id/tv_make_value"
-            android:layout_marginLeft="4dp"
+            android:layout_marginLeft="0dp"
             android:layout_toRightOf="@id/tv_colour"
             android:textColor="@color/tv_values_colour"
-            android:textSize="25sp"
+            android:textSize="@dimen/tv_label_txt_size"
             android:textStyle="bold"
             tools:text="Silver" />
 
@@ -101,10 +103,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/tv_no_of_doors"
-            android:layout_marginLeft="43dp"
+            android:layout_marginLeft="@dimen/tv_dr_vl_margin_left"
+            android:layout_alignLeft="@id/tv_colour_value"
             android:layout_toRightOf="@id/tv_no_of_doors"
             android:textColor="@color/tv_values_colour"
-            android:textSize="25sp"
+            android:textSize="@dimen/tv_label_txt_size"
             android:textStyle="bold"
             tools:text="5" />
 
@@ -115,11 +118,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="@dimen/btn_margin_top"
         android:layout_marginEnd="8dp"
-        android:background="#BBE3E9"
-        android:text="Get Vehicle Details"
-        android:textSize="30sp"
+        android:background="@color/btn_bg_colour"
+        android:text="@string/get_vehicle_details"
+        android:textSize="@dimen/btn_txt_size"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

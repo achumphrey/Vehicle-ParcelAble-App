@@ -3,4 +3,6 @@
     <string name="vehicle_details">Vehicle Details</string>
     <string name="vehicle_make">Vehicle Make:</string>
     <string name="vehicle_colour">Vehicle Colour:</string>
+    <string name="get_vehicle_details">Get Vehicle Details</string>
+    <string name="number_of_doors">Number Of Doors:</string>
 </resources>

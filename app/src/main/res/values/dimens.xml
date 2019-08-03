@@ -8,4 +8,11 @@
     <dimen name="tv_label_margin_top">50dp</dimen>
     <dimen name="tv_first_label_top_margin">100dp</dimen>
     <dimen name="rl_left_right_margin">10dp</dimen>
+    <dimen name="tv_label_txt_size">25sp</dimen>
+    <dimen name="tv_mk_margin_left">81dp</dimen>
+    <dimen name="btn_txt_size">30sp</dimen>
+    <dimen name="btn_margin_top">25dp</dimen>
+    <dimen name="tv_dr_vl_margin_left">4dp</dimen>
+    <dimen name="tv_header_margin_top">32dp</dimen>
+    <dimen name="tv_header_txt_size">35sp</dimen>
 </resources>
