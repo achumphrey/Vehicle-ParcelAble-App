@@ -5,4 +5,7 @@
     <string name="vehicle_colour">Vehicle Colour:</string>
     <string name="get_vehicle_details">Get Vehicle Details</string>
     <string name="number_of_doors">Number Of Doors:</string>
+    <string name="tv_tools_colour_value">Silver</string>
+    <string name="tv_tools_door_value">5</string>
+    <string name="tv_tools_make_value">Nissan</string>
 </resources>
