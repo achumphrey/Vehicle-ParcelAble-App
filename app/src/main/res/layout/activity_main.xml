@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/vehicle_details"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:textColor="@color/Tx_colour_header"
+        android:background="@color/bg_colour_header"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/rl_height"
+        android:layout_marginTop="40dp"
+        android:background="@color/rl_bg_colour"
+        app:layout_constraintTop_toBottomOf="@+id/tv_heading"
+        tools:layout_editor_absoluteX="3dp">
+
+
+        <TextView
+            android:id="@+id/tv_make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/tv_label_margin_left"
+            android:layout_marginTop="@dimen/tv_first_label_top_margin"
+            android:text="@string/vehicle_make"
+            android:textColor="@color/tv_label_txt_colour"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_colour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_make"
+            android:layout_marginLeft="@dimen/tv_label_margin_left"
+            android:layout_marginTop="@dimen/tv_label_margin_top"
+            android:text="@string/vehicle_colour"
+            android:textColor="@color/tv_label_txt_colour"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_no_of_doors"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_colour"
+            android:layout_marginLeft="@dimen/tv_label_margin_left"
+            android:layout_marginTop="@dimen/tv_label_margin_top"
+            android:layout_marginBottom="50dp"
+            android:text="Number Of Doors:"
+            android:textColor="@color/tv_label_txt_colour"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_make_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_make"
+            android:layout_marginLeft="81dp"
+            android:layout_toRightOf="@id/tv_make"
+            android:textColor="@color/tv_values_colour"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="Nissan" />
+
+        <TextView
+            android:id="@+id/tv_colour_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_colour"
+            android:layout_alignLeft="@id/tv_make_value"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@id/tv_colour"
+            android:textColor="@color/tv_values_colour"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="Silver" />
+
+        <TextView
+            android:id="@+id/tv_door_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/tv_no_of_doors"
+            android:layout_marginLeft="43dp"
+            android:layout_toRightOf="@id/tv_no_of_doors"
+            android:textColor="@color/tv_values_colour"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            tools:text="5" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_get_veh_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="8dp"
+        android:background="#BBE3E9"
+        android:text="Get Vehicle Details"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="rl_height">400dp</dimen>
+    <dimen name="rl_margin_top">36dp</dimen>
+    <dimen name="tv_label_margin_left">16dp</dimen>
+    <dimen name="tv_values_left_margin">40dp</dimen>
+    <dimen name="tv_label_margin_bottom">50dp</dimen>
+    <dimen name="tv_label_margin_top">50dp</dimen>
+    <dimen name="tv_first_label_top_margin">100dp</dimen>
+    <dimen name="rl_left_right_margin">10dp</dimen>
+</resources>
